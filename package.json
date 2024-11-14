@@ -27,7 +27,7 @@
     "preinstall": "npx @open-sauced/check-engines",
     "prestart": "npx @open-sauced/check-engines",
     "push": "npx @open-sauced/conventional-commit",
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "prebuild": "node generate-netlify-env.js",
     "build": "next build",
     "start": "next start",
