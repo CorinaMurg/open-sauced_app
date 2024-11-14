@@ -63,7 +63,10 @@ export const WorkspaceLayout = ({ workspaceId, banner, children, footer }: Works
                 onClick={() => setShowingSidebar(true)}
                 className="fixed z-50 border-8 border-solid border-black inset-x-0 top-24 w-fit bg-white rounded-r-md shadow-lg p-2"
               >
-                <LuArrowRightToLine className="w-4 h-4 text-gray-500" />
+                <span className="sr-only">Close Sidebar</span>
+                <span aria-hidden="true">
+                  <LuArrowRightToLine className="w-4 h-4 text-gray-500" />
+                </span>
               </button>
             )}
           </ClientOnly>

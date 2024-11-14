@@ -149,7 +149,9 @@ export const AppSideBar = ({ workspaceId, hideSidebar, sidebarCollapsed }: AppSi
               </label>
               <button onClick={hideSidebar} className="hover:bg-slate-50 p-2 rounded-md">
                 <span className="sr-only">Close sidebar</span>
-                <LuArrowLeftToLine aria-hidden="true" className="w-4 h-4 text-gray-500" />
+                <span aria-hidden="true">
+                  <LuArrowLeftToLine className="w-4 h-4 text-gray-500" />
+                </span>
               </button>
             </div>
             {workspaceId === "new" ? null : (
